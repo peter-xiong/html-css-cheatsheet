@@ -38,100 +38,112 @@
     <!-- Main -->
     <main class="main-body">
       <!-- Static Section -->
-      <section id="static">
-        <img src="static.png" alt="static" />
-        <h4>static</h4>
-        <p>
-          The element is positioned according to the normal flow of the
-          document. The top, right, bottom, left, and z-index properties have no
-          effect. This is the default value.
-        </p>
+      <section>
+        <div id="static">
+          <img src="static.png" alt="static" />
+          <h4>static</h4>
+          <p>
+            The element is positioned according to the normal flow of the
+            document. The top, right, bottom, left, and z-index properties have
+            no effect. This is the default value.
+          </p>
+        </div>
       </section>
       <!-- Relative Section -->
-      <section id="relative">
-        <img src="relative.png" alt="relative" />
-        <h4>relative</h4>
-        <p>
-          The element is positioned according to the normal flow of the
-          document, and then offset relative to itself based on the values of
-          top, right, bottom, and left. The offset does not affect the position
-          of any other elements; thus, the space given for the element in the
-          page layout is the same as if position were static.
-        </p>
+      <section>
+        <div id="relative">
+          <img src="relative.png" alt="relative" />
+          <h4>relative</h4>
+          <p>
+            The element is positioned according to the normal flow of the
+            document, and then offset relative to itself based on the values of
+            top, right, bottom, and left. The offset does not affect the
+            position of any other elements; thus, the space given for the
+            element in the page layout is the same as if position were static.
+          </p>
+        </div>
       </section>
       <!-- Absolute Section -->
-      <section id="absolute">
-        <img src="absolute.png" alt="absolute" />
-        <h4>absolute</h4>
-        <p>
-          The element is removed from the normal document flow, and no space is
-          created for the element in the page layout. It is positioned relative
-          to its closest positioned ancestor, if any; otherwise, it is placed
-          relative to the initial containing block. Its final position is
-          determined by the values of top, right, bottom, and left.
-        </p>
+      <section>
+        <div id="absolute">
+          <img src="absolute.png" alt="absolute" />
+          <h4>absolute</h4>
+          <p>
+            The element is removed from the normal document flow, and no space
+            is created for the element in the page layout. It is positioned
+            relative to its closest positioned ancestor, if any; otherwise, it
+            is placed relative to the initial containing block. Its final
+            position is determined by the values of top, right, bottom, and
+            left.
+          </p>
+        </div>
       </section>
       <!-- Sticky Section -->
-      <section id="sticky">
-        <img src="sticky.png" alt="sticky" />
-        <h4>sticky</h4>
-        <p>
-          The element is positioned according to the normal flow of the
-          document, and then offset relative to its nearest scrolling ancestor
-          and containing block (nearest block-level ancestor), including
-          table-related elements, based on the values of top, right, bottom, and
-          left. The offset does not affect the position of any other elements.
-        </p>
+      <section>
+        <div id="sticky">
+          <img src="sticky.png" alt="sticky" />
+          <h4>sticky</h4>
+          <p>
+            The element is positioned according to the normal flow of the
+            document, and then offset relative to its nearest scrolling ancestor
+            and containing block (nearest block-level ancestor), including
+            table-related elements, based on the values of top, right, bottom,
+            and left. The offset does not affect the position of any other
+            elements.
+          </p>
+        </div>
       </section>
       <!-- Fixed Section -->
-      <section id="fixed">
-        <img src="fixed.png" alt="fixed" />
-        <h4>fixed</h4>
-        <p>
-          The element is removed from the normal document flow, and no space is
-          created for the element in the page layout. It is positioned relative
-          to the initial containing block established by the viewport, except
-          when one of its ancestors has a transform, perspective, or filter
-          property set to something other than none (see the CSS Transforms
-          Spec), in which case that ancestor behaves as the containing block.
-          (Note that there are browser inconsistencies with perspective and
-          filter contributing to containing block formation.) Its final position
-          is determined by the values of top, right, bottom, and left.
-        </p>
+      <section>
+        <div id="fixed">
+          <img src="fixed.png" alt="fixed" />
+          <h4>fixed</h4>
+          <p>
+            The element is removed from the normal document flow, and no space
+            is created for the element in the page layout. It is positioned
+            relative to the initial containing block established by the
+            viewport, except when one of its ancestors has a transform,
+            perspective, or filter property set to something other than none
+            (see the CSS Transforms Spec), in which case that ancestor behaves
+            as the containing block. (Note that there are browser
+            inconsistencies with perspective and filter contributing to
+            containing block formation.) Its final position is determined by the
+            values of top, right, bottom, and left.
+          </p>
+        </div>
       </section>
-      <!-- Examples Section -->
-      <section id="examples">
-      </main>
-        <h3>Examples:</h3>
-        <table>
-          <thead>
-            <tr>
-              <th colspan="2">Value</th>
-              <th colspan="4">Syntax</th>
-            </tr>
-          </thead>
+    </main>
+    <!-- Examples Section -->
+    <section id="examples">
+      <h3>Examples:</h3>
+      <table class="example-table">
+        <thead>
           <tr>
-            <td colspan="2">static</td>
-            <td colspan="4">definition</td>
+            <th colspan="2">Value</th>
+            <th colspan="4">Syntax</th>
           </tr>
-          <tr>
-            <td colspan="2">relative</td>
-            <td colspan="4">definition</td>
-          </tr>
-          <tr>
-            <td colspan="2">absolute</td>
-            <td colspan="4">definition</td>
-          </tr>
-          <tr>
-            <td colspan="2">sticky</td>
-            <td colspan="4">definition</td>
-          </tr>
-          <tr>
-            <td colspan="2">fixed</td>
-            <td colspan="4">definition</td>
-          </tr>
-        </table>
-      </section>
-    
+        </thead>
+        <tr>
+          <td colspan="2">static</td>
+          <td colspan="4">display: static;</td>
+        </tr>
+        <tr>
+          <td colspan="2">relative</td>
+          <td colspan="4">display: relative;</td>
+        </tr>
+        <tr>
+          <td colspan="2">absolute</td>
+          <td colspan="4">display: absolute;</td>
+        </tr>
+        <tr>
+          <td colspan="2">sticky</td>
+          <td colspan="4">display: sticky;</td>
+        </tr>
+        <tr>
+          <td colspan="2">fixed</td>
+          <td colspan="4">display: fixed;</td>
+        </tr>
+      </table>
+    </section>
   </body>
 </html>
