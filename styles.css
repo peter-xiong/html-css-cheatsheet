@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+
+h2,
+h4 {
+  font-size: 1.5em;
+}
+
+/* Navigation */
+.nav-bar {
+  text-align: center;
+}
+
+.nav-bar li {
+  display: inline;
+  padding: 0px 20px;
+  font-size: 1.5em;
+}
+
+button {
+  border-radius: 25%;
+  text-decoration: none;
+  background-color: rgb(123, 123, 155);
+}
+
+button:hover {
+  background-color: rgb(59, 53, 43);
+  transition: all 0.5s ease-out;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Header */
+.title {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+/* Body */
+#static {
+  margin: 0 auto 50px;
+  border-top: 2px dotted black;
+  width: 500px;
+  padding: 5%;
+}
+
+#relative {
+  margin: 0 auto 50px;
+  border-top: 2px dotted black;
+  width: 500px;
+  padding: 5%;
+}
+
+#absolute {
+  margin: 0 auto 50px;
+  border-top: 2px dotted black;
+  width: 500px;
+  padding: 5%;
+}
+
+#sticky {
+  margin: 0 auto 50px;
+  border-top: 2px dotted black;
+  width: 500px;
+  padding: 5%;
+}
+
+#fixed {
+  margin: 0 auto 50px;
+  border-top: 2px dotted black;
+  width: 500px;
+  padding: 5%;
+}
+
+.main-body {
+  margin: 0 10% 50px;
+  text-align: center;
+}
+
+.main-body section img {
+  width: 200px;
+}
+
+.main-body section p {
+  display: inline;
+  padding-bottom: 5%;
+  border: none;
+  margin: 0 auto;
+  width: 500px;
+  height: 0;
+  text-align: justify;
+}
